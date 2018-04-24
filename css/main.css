@@ -1,0 +1,49 @@
+body{
+	font-family: 'Playfair Display', serif;
+}
+
+header{
+	height: 600px;
+	position: relative; 
+	overflow: hidden; /*remover o blur das bordas*/
+}
+
+.header-background{
+	height: 600px;
+	background-image: url('../img/pizza.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(5px) brightness(40%);
+	z-index: -1;
+	transform: scale(1.1); /*remover o blur das bordas*/
+}
+
+.box-info{
+	max-width: 400px;
+}
+
+.logo{
+	width: 100%;
+}
+
+.box-line{
+	width: 100%;
+	border-color: grey;
+}
+
+.btn-border{
+	border-radius: 30px;
+}
+
+.btn-main{
+	background-color: #004b00;
+	font-family: Arial, Helvetica, sans-serif; /*fonte não é a playfair, usei uma mais parecida com a do layout*/
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px){
+	header, .header-background{
+		height: 500px;
+	}
+}
