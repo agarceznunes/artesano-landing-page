@@ -4,7 +4,6 @@ body{
 
 header{
 	height: 600px;
-	position: relative; 
 	overflow: hidden; /*remover o blur das bordas*/
 }
 
@@ -32,18 +31,23 @@ header{
 	border-color: grey;
 }
 
-.btn-border{
-	border-radius: 30px;
+.btn{
+	border-radius: 50px;
 }
 
-.btn-main{
+.btn-1{
 	background-color: #004b00;
 	font-family: Arial, Helvetica, sans-serif; /*fonte não é a playfair, usei uma mais parecida com a do layout*/
+	padding: 20px 50px 20px 50px;
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px){
 	header, .header-background{
 		height: 500px;
+	}
+
+	.btn-1{
+		padding: 15px 25px 15px 25px; /*reduzir tamanho do botao*/
 	}
 }
